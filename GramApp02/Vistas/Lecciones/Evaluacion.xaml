@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Lecciones.Evaluacion"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout>
+            <Grid>
+                <Frame Padding="0">
+                    <Frame Padding="0">
+                        <Image Source="FondoHome.png"
+                               Aspect="AspectFill"
+                               HeightRequest="900" />
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout  Padding="15"
+                      Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="previous.png"
+                                     HeightRequest="25"
+                                     x:Name="btnVolver"
+                                     Clicked="btnVolver_Clicked"
+                                     BackgroundColor="White" />
+                    </Frame>
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Evaluación"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#34344b"
+                           VerticalOptions="Center" />
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="ajustes3.png"
+                                     x:Name="btnAjustes"
+                                     Clicked="btnAjustes_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+            </StackLayout>
+            <Frame HasShadow="False"
+                   CornerRadius="50">
+                <ScrollView>
+                    <StackLayout Margin="0,20,0,0"
+                                 Spacing="20">
+                        <Label Text="Seleccione la opción correcta"
+                               FontSize="Medium" 
+                               FontAttributes="Bold"/>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="1.- Este tipo de palabras son aquellas en las que la sílaba tónica, es decir, la sílaba acentuada, se encuentra antes de la antepenúltima sílaba. Estas palabras siempre llevan acento ortográfico. ¿de cuál habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Agudas"
+                                             x:Name="rbR1p1" 
+                                             IsChecked="True"/>
+                                <RadioButton Content="Esdrújulas"
+                                             x:Name="rbR2p1" />
+                                <RadioButton Content="Graves o llanas"
+                                             x:Name="rbR3p1" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="2.- Este tipo de palabras son aquellas en las que la sílaba tónica se encuentra en la última sílaba de la palabra. En este caso, no siempre llevan acento ortográfico. ¿de cuál habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Agudas"
+                                             x:Name="rbR1p2"
+                                             IsChecked="True" />
+                                <RadioButton Content="Esdrújulas"
+                                             x:Name="rbR2p2" />
+                                <RadioButton Content="Graves o llanas"
+                                             x:Name="rbR3p2" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="3.- Este tipo de palabras se caracterizan por llevar acento cuando no terminan en una vocal ‘n’ o ‘s’. ¿de cuál habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Agudas"
+                                             x:Name="rbR1p3"
+                                             IsChecked="True" />
+                                <RadioButton Content="Esdrújulas"
+                                             x:Name="rbR2p3" />
+                                <RadioButton Content="Graves o llanas"
+                                             x:Name="rbR3p3" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="4.- Las palabras llanas son aquellas en las que la sílaba tónica, es decir, la sílaba acentuada, se encuentra en la ________ sílaba de la palabra. ¿de cuál habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Penúltima"
+                                             x:Name="rbR1p4"
+                                             IsChecked="True" />
+                                <RadioButton Content="Última "
+                                             x:Name="rbR2p4" />
+                                <RadioButton Content="Antepenúltima"
+                                             x:Name="rbR3p4" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="5.- Se utilizan las comas ‘,’ para separar los elementos de una lista o enumeración. La anterior afirmación es."
+                                       FontSize="Medium" />
+                                <RadioButton Content="Falsa"
+                                             x:Name="rbR1p5"
+                                             IsChecked="True" />
+                                <RadioButton Content="Verdadera"
+                                             x:Name="rbR2p5" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="6.- Se usan comas para separar elementos en _______ y _______. ¿de cuáles habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Nombre y pronombres"
+                                             x:Name="rbR1p6"
+                                             IsChecked="True" />
+                                <RadioButton Content="Fechas y direcciones"
+                                             x:Name="rbR2p6" />
+                                <RadioButton Content="Sujetos y predicados"
+                                             x:Name="rbR3p6" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="7.- Se utiliza al final de una oración declarativa o imperativa que no sea interrogativa o exclamativa. ¿de cuál habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Punto (.)"
+                                             x:Name="rbR1p7"
+                                             IsChecked="True" />
+                                <RadioButton Content="Coma (,)"
+                                             x:Name="rbR2p7" />
+                                <RadioButton Content="Punto y coma (;)"
+                                             x:Name="rbR3p7" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="8.- Se utiliza para separar oraciones o cláusulas independientes pero relacionadas que podrían ser separadas por un punto. ¿de cuál habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Punto (.)"
+                                             x:Name="rbR1p8"
+                                             IsChecked="True" />
+                                <RadioButton Content="Coma (,)"
+                                             x:Name="rbR2p8" />
+                                <RadioButton Content="Punto y coma (;)"
+                                             x:Name="rbR3p8" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="9.- Las palabras ___________ son palabras que constan de una sola sílaba y que se diferencian entre sí por el acento o la posición del acento. ¿de cuál habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content="Agudas"
+                                             x:Name="rbR1p9"
+                                             IsChecked="True" />
+                                <RadioButton Content="Esdrújulas"
+                                             x:Name="rbR2p9" />
+                                <RadioButton Content="Monosílabas"
+                                             x:Name="rbR3p9" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame HasShadow="False"
+                               BackgroundColor="WhiteSmoke"
+                               CornerRadius="20">
+                            <StackLayout>
+                                <Label Text="10.- Se utilizan las letras ‘_’ después de las letras ‘m’ y ‘n’. La letra ‘_’ se utiliza en el resto de las palabras. ¿de cuáles habla?"
+                                       FontSize="Medium" />
+                                <RadioButton Content=" 'm' y 'b'"
+                                             x:Name="rbR1p10"
+                                             IsChecked="True" />
+                                <RadioButton Content=" 'v' y 'b'"
+                                             x:Name="rbR2p10" />
+                                <RadioButton Content=" 'b' y 'v'"
+                                             x:Name="rbR3p10" />
+                            </StackLayout>
+                        </Frame>
+                        <Button Text="Enviar"
+                                TextColor="White"
+                                CornerRadius="50"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                BackgroundColor="#397fe9"
+                                x:Name="btnEnviar"
+                                Clicked="btnEnviar_Clicked" />
+                    </StackLayout>
+                </ScrollView>
+                
+            </Frame>
+        </StackLayout>
+        
+    </Grid>
+    
+</ContentPage>

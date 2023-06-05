@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Lecciones.EjeLeccion4.Ejercicios_L4_2"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout>
+            <Grid>
+                <Frame Padding="0">
+                    <Frame Padding="0">
+                        <Image Source="FondoHome.png"
+                               Aspect="AspectFill"
+                               HeightRequest="900" />
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout Padding="15"
+                     Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="previous.png"
+                                     x:Name="btnRegresar"
+                                     Clicked="btnRegresar_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Ejercicio"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#34344b"
+                           VerticalOptions="Center" />
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="ajustes3.png"
+                                     x:Name="btnAjustes"
+                                     Clicked="btnAjustes_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Margin="20,100,20,0"
+                     Spacing="20">
+            <Label Text="Lee las siguientes oraciones y coloca la palabra  más apropiada para mejorar el significado y la coherencia del texto."
+                   FontSize="Medium"
+                   Margin="10,0,0,0" />
+            <Frame HasShadow="False"
+                   CornerRadius="50">
+                <Label Text="__ perro es más pequeño que el tuyo."
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       Padding="10" />
+            </Frame>
+            <Label Text="Respuesta"
+                   FontSize="Medium"
+                   Margin="10,0,0,0" />
+            <Frame HasShadow="False"
+                   CornerRadius="50">
+                <Label Text="Respuesta"
+                       x:Name="lblRespuesta"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold,Italic"
+                       Padding="10" />
+            </Frame>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="mí"
+                        x:Name="btnOp1"
+                        Clicked="btnOp1_Clicked"
+                        CornerRadius="50"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        BackgroundColor="GreenYellow" />
+                <Button Text="mi"
+                        x:Name="btnOp2"
+                        Clicked="btnOp2_Clicked"
+                        CornerRadius="50"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        BackgroundColor="GreenYellow" />
+                <Button Text="Terminar"
+                        x:Name="btnTerminar"
+                        Clicked="btnTerminar_Clicked"
+                        Margin="0,20,0,20"
+                        TextColor="White"
+                        CornerRadius="50"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        HorizontalOptions="End"
+                        BackgroundColor="#397fe9" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>

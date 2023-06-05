@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Lecciones.Leccion1"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout>
+            <Grid>
+                <Frame Padding="0">
+                    <Frame Padding="0">
+                        <Image Source="FondoHome.png"
+                               Aspect="AspectFill"
+                               HeightRequest="900" />
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout Padding="15"
+                     Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="previous.png" 
+                                     x:Name="btnRegresar"
+                                     Clicked="btnRegresar_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent"/>
+                    </Frame>
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Acentuación"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#34344b"
+                           VerticalOptions="Center" />
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="ajustes3.png"
+                                     x:Name="btnAjustes"
+                                     Clicked="btnAjustes_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Margin="20,90,20,70">
+            <Frame HasShadow="False"
+                   CornerRadius="50">
+                <ScrollView Orientation="Vertical">
+                    <StackLayout Padding="10"
+                                 Spacing="15">
+                        <Label Text="Teoría"
+                           FontSize="Large"
+                           FontAttributes="Bold"/>
+                        <Label Text="Reglas de acentuación"
+                           FontSize="Medium"/>
+                        <Label Text="1.- Acentuación de palabras agudas: Las palabras agudas llevan acento cuando terminan en una vocal, 'n' o 's'. Ejemplos: café, sofá, camión, compás."
+                           FontSize="Medium"/>
+                        <Label Text="2.- Acentuación de palabras graves o llanas: Las palabras graves o llanas llevan acento cuando no terminan en una vocal, 'n' o 's'. Ejemplos: música, lápiz, fácil, cálido."
+                           FontSize="Medium"/>
+                        <Label Text="3.- Acentuación de palabras esdrújulas: Las palabras esdrújulas siempre llevan acento. Ejemplos: médico, cántaro, público."
+                           FontSize="Medium"/>
+                        <Label Text="4.- Acentuación de palabras sobreesdrújulas: Las palabras sobreesdrújulas siempre llevan acento. Ejemplos: cómetelo, dímelo, préstamelo."
+                           FontSize="Medium"/>
+                        <Label Text="5.- Acentuación de diptongos y triptongos: Si un diptongo (secuencia de dos vocales juntas en una misma sílaba) o triptongo (secuencia de tres vocales juntas en una misma sílaba) se rompe por el uso de una tilde, se coloca sobre la vocal acentuada. Ejemplos: raíz, día, buey, cuídate, vió, estudiáis."
+                           FontSize="Medium"/>
+                        <Label Text="6.- Acentuación de palabras homónimas: Se utilizan acentos para distinguir palabras que tienen el mismo sonido pero significados diferentes. Ejemplos: tú (pronombre personal) / tu (posesivo), sé (verbo saber) / se (pronombre), él (pronombre) / el (artículo)."
+                           FontSize="Medium"/>
+                        <Label Text="7.- Excepciones a las reglas generales: Existen algunas palabras que no siguen las reglas generales de acentuación y deben ser aprendidas individualmente, como monosílabos acentuados, palabras compuestas, extranjerismos, entre otras."
+                           FontSize="Medium"/>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand"
+                     Margin="20,20,20,20">
+            <Button Text="Realizar ejercicios"
+                    x:Name="btnEjercicios"
+                    Clicked="btnEjercicios_Clicked"
+                    CornerRadius="50"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    TextColor="White"
+                    BackgroundColor="#397fe9"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

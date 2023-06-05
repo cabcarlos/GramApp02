@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.PaginaPrincipal"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <StackLayout HeightRequest="500">
+            <Grid>
+                <Frame Padding="0">
+                    <Image Source="FondoInicio.png"
+                           Aspect="AspectFill" 
+                           HeightRequest="900"/>
+                </Frame>
+                <StackLayout>
+                    <Label Text="¡Bienvenidos!"
+                           FontSize="40"
+                           FontAttributes="bold"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,100,0,0" />
+                    <Image Source="Logo.png" 
+                           HeightRequest="300"/>
+                </StackLayout>
+                <Frame Margin="0,550,0,-20"
+                       CornerRadius="45"
+                       VerticalOptions="FillAndExpand">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#ffffff"
+                                          Offset="0" />
+                            <GradientStop Color="#bcffcd"
+                                          Offset="1" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout Spacing="20">
+                        <Label Text="Escoja una opción"
+                               FontSize="25"
+                               Margin="0,20,0,0"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" />
+                        <Button Text="Iniciar sesión"
+                                BackgroundColor="Green"
+                                CornerRadius="20"
+                                FontSize="Medium"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                Margin="0,20,0,0"
+                                x:Name="btnIniciar"
+                                Clicked="btnIniciar_Clicked" />
+                        <Button Text="Registrarse"
+                                BackgroundColor="CadetBlue"
+                                CornerRadius="20"
+                                FontSize="Medium"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                x:Name="btnRegistrarse"
+                                Clicked="btnRegistrarse_Clicked" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

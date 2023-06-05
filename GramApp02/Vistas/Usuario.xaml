@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Usuario"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout HeightRequest="500">
+            <Grid>
+                <Frame Padding="0">
+                    <Image Source="FondoHome.png"
+                           Aspect="AspectFill"
+                           HeightRequest="900" />
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="Start">
+            <sombras:Shadows CornerRadius="60"
+                             Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                <Frame HasShadow="False"
+                       CornerRadius="60"
+                       Margin="10,10,10,10">
+                    <ImageButton Source="previous.png"
+                                 HeightRequest="25"
+                                 x:Name="btnVolver"
+                                 Clicked="btnVolver_Clicked"
+                                 BackgroundColor="White" />
+                </Frame>
+            </sombras:Shadows>
+        </StackLayout>
+        
+        <Frame VerticalOptions="Start"
+               Margin="0,50,0,-20"
+               CornerRadius="45"
+               HasShadow="False"
+               BackgroundColor="Transparent">
+            <StackLayout>
+                <Label Text="Usuario"
+                       FontSize="40"
+                       TextColor="green"
+                       FontAttributes="Bold"
+                       Margin="0,0,0,0"
+                       HorizontalOptions="Center" />
+                <Image Source="usuario.png" 
+                       HeightRequest="200"
+                       Margin="0,20,0,0"/>
+            </StackLayout>
+            
+        </Frame>
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="0,400,0,-20"
+               HasShadow="False"
+               CornerRadius="45">
+            <StackLayout Spacing="15"
+                         Margin="0,20,0,0">
+                <Label Text="Datos de usuario"
+                       FontSize="25"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold" />
+                <Frame HasShadow="False"
+                       CornerRadius="20"
+                       Padding="15"
+                       BackgroundColor="#dedede">
+                    <Label Text="Nombre"
+                           x:Name="lblNombre"
+                           FontSize="20" />
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="20"
+                       Padding="15"
+                       BackgroundColor="#dedede">
+                    <Label Text="Correo"
+                           x:Name="lblCorreo"
+                           FontSize="20"/>
+                </Frame>
+                <Button Text="Cerrar sesión"
+                        x:Name="btnCerrarSesion"
+                        Clicked="btnCerrarSesion_Clicked"
+                        BackgroundColor="#f79d99"
+                        Margin="0,20,0,0"
+                        FontSize="Medium"
+                        CornerRadius="20" />
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

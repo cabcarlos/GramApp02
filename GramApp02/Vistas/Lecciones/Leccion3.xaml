@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Lecciones.Leccion3"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout>
+            <Grid>
+                <Frame Padding="0">
+                    <Frame Padding="0">
+                        <Image Source="FondoHome.png"
+                               Aspect="AspectFill"
+                               HeightRequest="900" />
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout Padding="15"
+                     Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="previous.png"
+                                     x:Name="btnRegresar"
+                                     Clicked="btnRegresar_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Signos de puntuación"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#34344b"
+                           VerticalOptions="Center" />
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="ajustes3.png"
+                                     x:Name="btnAjustes"
+                                     Clicked="btnAjustes_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Margin="20,90,20,70">
+            <Frame HasShadow="False"
+                   CornerRadius="50">
+                <ScrollView Orientation="Vertical">
+                    <StackLayout Padding="10"
+                                 Spacing="15">
+                        <Label Text="Teoría"
+                               FontSize="Large"
+                               FontAttributes="Bold" />
+                        <Label Text="Reglas de los signos de puntuación"
+                               FontSize="Medium" />
+                        <Label Text="1.- Punto (.) : Se utiliza al final de una oración declarativa o imperativa que no sea interrogativa o exclamativa. Ejemplo: Me gusta ir al cine."
+                               FontSize="Medium" />
+                        <Label Text="2.- Punto y coma (;) : Se utiliza para separar oraciones o cláusulas independientes pero relacionadas que podrían ser separadas por un punto. Ejemplo: Ella estudió mucho para el examen; sin embargo, no obtuvo una buena calificación."
+                               FontSize="Medium" />
+                        <Label Text="3.- Dos puntos (:) : Se utiliza para introducir una enumeración, una cita, una explicación o una conclusión. También se utiliza para introducir un diálogo. Ejemplo: Quiero comprar varias frutas: manzanas, plátanos y naranjas."
+                               FontSize="Medium" />
+                        <Label Text="4.- Signos de interrogación (¿?) y exclamación (¡!) : Se utilizan al principio y al final de una oración interrogativa o exclamativa, respectivamente. Ejemplo: ¿Cómo estás? ¡Qué bonito día hace hoy!"
+                               FontSize="Medium" />
+                        <Label Text="5.- Comillas (‘’) : Se utilizan para encerrar citas literales, palabras o frases destacadas, títulos de obras, entre otros usos. Ejemplo: El profesor dijo: ‘Estudien para el examen’."
+                               FontSize="Medium" />
+                        <Label Text="6.- Paréntesis (()) : Se utilizan para incluir información adicional o aclaratoria dentro de una oración. Ejemplo: Mi hermana (la mayor) es muy inteligente."
+                               FontSize="Medium" />
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand"
+                     Margin="20,20,20,20">
+            <Button Text="Realizar ejercicios"
+                    x:Name="btnEjercicios"
+                    Clicked="btnEjercicios_Clicked"
+                    CornerRadius="50"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    TextColor="White"
+                    BackgroundColor="#397fe9" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

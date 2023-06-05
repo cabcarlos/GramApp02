@@ -1,0 +1,38 @@
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\bin\Release\netstandard2.0\GramApp02.deps.json
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\bin\Release\netstandard2.0\GramApp02.dll
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\bin\Release\netstandard2.0\GramApp02.pdb
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\GramApp02.csproj.AssemblyReference.cache
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\GramApp02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Ajustes.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Home.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\InicioSesion.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion1\Ejercicios L1 1.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion1\Ejercicios L1 2.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion2\Ejercicios L2 1.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion2\Ejercicios L2 2.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion3\Ejercicios L3 1.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion3\Ejercicios L3 2.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion4\Ejercicios L4 1.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion4\Ejercicios L4 2.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion5\Ejercicios L5 1.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\EjeLeccion5\Ejercicios L5 2.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\Evaluacion.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\General.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\Leccion1.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\Leccion2.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\Leccion3.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\Leccion4.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Lecciones\Leccion5.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\PaginaPrincipal.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\RecuperarPassword.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Registro.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\Vistas\Usuario.xaml.g.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\GramApp02.AssemblyInfoInputs.cache
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\GramApp02.AssemblyInfo.cs
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\GramApp02.csproj.CoreCompileInputs.cache
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\XamlC.stamp
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\GramApp02.dll
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\refint\GramApp02.dll
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\GramApp02.pdb
+D:\Proyectos VS2023\repos\GramApp02\GramApp02\obj\Release\netstandard2.0\ref\GramApp02.dll

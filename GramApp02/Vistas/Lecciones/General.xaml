@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Lecciones.General"
+              NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout>
+            <Grid>
+                <Frame Padding="0">
+                    <Frame Padding="0">
+                        <Image Source="FondoHome.png"
+                               Aspect="AspectFill"
+                               HeightRequest="900" />
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout Padding="15"
+                     Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="previous.png" 
+                                     x:Name="btnRegresar"
+                                     Clicked="btnRegresar_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent"/>
+                    </Frame>
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Clases"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#34344b"
+                           VerticalOptions="Center" />
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="ajustes3.png"
+                                     x:Name="btnAjustes"
+                                     Clicked="btnAjustes_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="lectura.png"
+                       HeightRequest="170"
+                       Margin="0,0,0,20"/>
+                <Frame CornerRadius="50"
+                       HasShadow="False"
+                       Padding="15">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#f75f3c"
+                                      Offset="0" />
+                            <GradientStop Color="#ec5938"
+                                      Offset="1" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Acentuación"
+                           Padding="10"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="StartAndExpand" />
+                        <Button Text="Ir"
+                                x:Name="btnLeccion1"
+                                Clicked="btnLeccion1_Clicked"
+                                BackgroundColor="White"
+                                CornerRadius="30"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextColor="#ec5938"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="50"
+                       HasShadow="False"
+                       Padding="15">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#00d0de"
+                                      Offset="0" />
+                            <GradientStop Color="#00bfcb"
+                                      Offset="1" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Uso de comas"
+                           Padding="10"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="StartAndExpand" />
+                        <Button Text="Ir"
+                                x:Name="btnLeccion2"
+                                Clicked="btnLeccion2_Clicked"
+                                BackgroundColor="White"
+                                CornerRadius="30"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextColor="#00bfcb"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="50"
+                       HasShadow="False"
+                       Padding="15">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#9c00e7"
+                                      Offset="0" />
+                            <GradientStop Color="#8900e1"
+                                      Offset="1" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Signos de puntuación"
+                           Padding="10"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="StartAndExpand" />
+                        <Button Text="Ir"
+                                x:Name="btnLeccion3"
+                                Clicked="btnLeccion3_Clicked"
+                                BackgroundColor="White"
+                                CornerRadius="30"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextColor="#8900e1"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="50"
+                       HasShadow="False"
+                       Padding="15">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#dbdf38"
+                                      Offset="0" />
+                            <GradientStop Color="#cdcd32"
+                                      Offset="1" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Uso de palabras"
+                           Padding="10"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="StartAndExpand" />
+                        <Button Text="Ir"
+                                x:Name="btnLeccion4"
+                                Clicked="btnLeccion4_Clicked"
+                                BackgroundColor="White"
+                                CornerRadius="30"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextColor="#cdcd32"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="50"
+                       HasShadow="False"
+                       Padding="15">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#f836a0"
+                                      Offset="0" />
+                            <GradientStop Color="#e53499"
+                                      Offset="1" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Uso de letras"
+                           Padding="10"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="StartAndExpand" />
+                        <Button Text="Ir"
+                                x:Name="btnLeccion5"
+                                Clicked="btnLeccion5_Clicked"
+                                BackgroundColor="White"
+                                CornerRadius="30"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextColor="#e53499"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Lecciones.Leccion5"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout>
+            <Grid>
+                <Frame Padding="0">
+                    <Frame Padding="0">
+                        <Image Source="FondoHome.png"
+                               Aspect="AspectFill"
+                               HeightRequest="900" />
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout Padding="15"
+                     Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="previous.png"
+                                     x:Name="btnRegresar"
+                                     Clicked="btnRegresar_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Uso de letras"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#34344b"
+                           VerticalOptions="Center" />
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="ajustes3.png"
+                                     x:Name="btnAjustes"
+                                     Clicked="btnAjustes_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Margin="20,90,20,70">
+            <Frame HasShadow="False"
+                   CornerRadius="50">
+                <ScrollView Orientation="Vertical">
+                    <StackLayout Padding="10"
+                                 Spacing="15">
+                        <Label Text="Teoría"
+                               FontSize="Large"
+                               FontAttributes="Bold" />
+                        <Label Text="Reglas del uso de letras"
+                               FontSize="Medium" />
+                        <Label Text="1.- Uso de mayúsculas y minúsculas: Las mayúsculas se utilizan al comienzo de una oración, para nombrar personas, países, ciudades, instituciones, meses y días de la semana, entre otros casos específicos. Las minúsculas se utilizan en el resto de los casos."
+                               FontSize="Medium" />
+                        <Label Text="2.- Uso de la letra ‘b’ y ‘v’: Se utiliza la letra ‘b’ después de las letras ‘m’ y ‘n’ (excepciones: ambiguo, imberbe) y en la sílaba ‘bu’ (excepciones: vuelo, vuela). La letra ‘v’ se utiliza en el resto de los casos."
+                               FontSize="Medium" />
+                        <Label Text="3.- Uso de la letra ‘g’ y ‘j’: La letra ‘g’ se utiliza antes de las vocales ‘a’, ‘o’, ‘u’ y al final de una sílaba. La letra ‘j’ se utiliza antes de las vocales ‘e’ y ‘i’. Ejemplos: gato, juego."
+                               FontSize="Medium" />
+                        <Label Text="4.- Uso de la letra ‘h’: La letra ‘h’ es muda en español, por lo que no tiene sonido propio. Se utiliza principalmente para formar dígrafos como ‘ch’. Ejemplos: chocolate."
+                               FontSize="Medium" />
+                        <Label Text="5.- Uso de la letra ‘ll’: En algunas regiones, la ‘ll’ se considera una letra del alfabeto, mientras que en otras se considera un dígrafo. Dependiendo de la región, se puede utilizar la ‘ll’ o la ‘y’ para representar el mismo sonido. Ejemplos: lluvia/yuvia."
+                               FontSize="Medium" />
+                        <Label Text="6.- Uso de la letra ‘y’: La letra ‘y’ se utiliza como conjunción copulativa (‘y’), como consonante en palabras como ‘yogur’ o como vocal en palabras como ‘rey’."
+                               FontSize="Medium" />
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand"
+                     Margin="20,20,20,20">
+            <Button Text="Realizar ejercicios"
+                    x:Name="btnEjercicios"
+                    Clicked="btnEjercicios_Clicked"
+                    CornerRadius="50"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    TextColor="White"
+                    BackgroundColor="#397fe9" />
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>

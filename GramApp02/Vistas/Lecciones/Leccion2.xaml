@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GramApp02.Vistas.Lecciones.Leccion2"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid>
+        <StackLayout>
+            <Grid>
+                <Frame Padding="0">
+                    <Frame Padding="0">
+                        <Image Source="FondoHome.png"
+                               Aspect="AspectFill"
+                               HeightRequest="900" />
+                    </Frame>
+                </Frame>
+            </Grid>
+        </StackLayout>
+        <StackLayout Padding="15"
+                     Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="previous.png"
+                                     x:Name="btnRegresar"
+                                     Clicked="btnRegresar_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}"
+                                 HorizontalOptions="CenterAndExpand">
+                    <Label Text="Uso de comas"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#34344b"
+                           VerticalOptions="Center" />
+                </sombras:Shadows>
+                <sombras:Shadows CornerRadius="60"
+                                 Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#f3f9e8,BlurRadius=15}">
+                    <Frame HasShadow="False"
+                           CornerRadius="60">
+                        <ImageButton Source="ajustes3.png"
+                                     x:Name="btnAjustes"
+                                     Clicked="btnAjustes_Clicked"
+                                     HeightRequest="25"
+                                     BackgroundColor="Transparent" />
+                    </Frame>
+                </sombras:Shadows>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Margin="20,90,20,70">
+            <Frame HasShadow="False"
+                   CornerRadius="50">
+                <ScrollView Orientation="Vertical">
+                    <StackLayout Padding="10"
+                                 Spacing="15">
+                        <Label Text="Teoría"
+                               FontSize="Large"
+                               FontAttributes="Bold" />
+                        <Label Text="Reglas de uso de comas"
+                               FontSize="Medium" />
+                        <Label Text="1.- Separar elementos en una enumeración: Se utilizan comas para separar los elementos de una lista o enumeración. Ejemplo: Me gusta leer novelas, poesía, ensayos y biografías."
+                               FontSize="Medium" />
+                        <Label Text="2.- Separar oraciones o cláusulas independientes: Las comas se usan para separar oraciones independientes cuando están unidas por coordinación (conjunciones como ‘y’, ‘o’, ‘pero’, ‘ni’, ‘por tanto’, entre otras). Ejemplo: Estudia mucho para el examen, pero también necesita descansar."
+                               FontSize="Medium" />
+                        <Label Text="3.- Separar elementos explicativos o aclaratorios: Se emplean comas para separar elementos que proporcionan información adicional pero no son esenciales para la comprensión de la oración. Ejemplo: Juan, mi vecino, es muy amable."
+                               FontSize="Medium" />
+                        <Label Text="4.- Separar vocativos y expresiones intercaladas: Las comas se utilizan para marcar los vocativos (nombres o apelativos que se usan para llamar o dirigirse a alguien) y las expresiones intercaladas dentro de una oración. Ejemplo: María, ¿puedes ayudarme con esto?, por favor, no te vayas."
+                               FontSize="Medium" />
+                        <Label Text="5.- Separar el complemento del nombre: Si el complemento del nombre es una expresión aclaratoria o descriptiva que se puede omitir sin alterar el sentido de la oración, se separa con comas. Ejemplo: Carlos, un hombre muy talentoso, ganó el premio."
+                               FontSize="Medium" />
+                        <Label Text="6.- Separar elementos en fechas y direcciones: Se usan comas para separar elementos en fechas y direcciones. Ejemplo: Nací el 10 de enero de 1990, en Madrid, España."
+                               FontSize="Medium" />
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand"
+                     Margin="20,20,20,20">
+            <Button Text="Realizar ejercicios"
+                    x:Name="btnEjercicios"
+                    Clicked="btnEjercicios_Clicked"
+                    CornerRadius="50"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    TextColor="White"
+                    BackgroundColor="#397fe9" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
